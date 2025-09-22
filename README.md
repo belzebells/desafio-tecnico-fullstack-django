@@ -1,29 +1,29 @@
 # Desafio Django - Sistema de Produtos
 
-Este projeto foi desenvolvido como parte de um desafio técnico utilizando **Django**.  
+Este projeto foi desenvolvido como parte de um desafio técnico utilizando Django.
 O sistema implementa autenticação de usuários (cadastro, login e logout) e gerenciamento de produtos.
 
----
 
-## 🔧 Tecnologias utilizadas
-- Python 3.x  
-- Django 5.x  
-- SQLite (banco de dados padrão do Django)  
-- HTML (templates)  
-- CSS básico (estático)  
+# 🔧 Tecnologias utilizadas
 
----
+- Python 3.x
+- Django 5.x
+- SQLite (banco de dados padrão do Django)
+- HTML (templates)
+- CSS básico (estático)
 
-## 🚀 Funcionalidades
-- Cadastro de usuários (`/accounts/signup/`)  
-- Login de usuários (`/accounts/login/`)  
-- Logout seguro via POST (`/accounts/logout/`)  
-- Listagem de produtos cadastrados  
-- Integração básica de templates (`base.html`)  
 
----
+# 🚀 Funcionalidades
+
+- Cadastro de usuários (/accounts/signup/)
+- Login de usuários (/accounts/login/)
+- Logout seguro via POST (/accounts/logout/)
+- Listagem de produtos cadastrados
+- Integração básica de templates (base.html)
+
 
 ## 📂 Estrutura do projeto
+```bash
 desafio/
 ├── manage.py
 ├── belzebells/           # Configurações do Django (settings, urls, wsgi)
@@ -37,53 +37,59 @@ desafio/
 └── static/               # Arquivos estáticos (CSS, imagens)
     └── css/
         └── style.css
+```
 
-⚙️ Como rodar o projeto localmente
+# ⚙️ Como rodar o projeto localmente
+## 1. Clone o repositório:
 
-1. Clone o repositório:
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+```git clone https://github.com/belzebells/desafio-tecnico-fullstack-django/
+cd desafio-tecnico-fullstack-djang
+```
 
-2. Crie um ambiente virtual:
+## 2. Crie um ambiente virtual:
+
+```
 python -m venv venv
+```
 
-3. Ative o ambiente virtual:
-   - Linux/Mac:
-     source venv/bin/activate
-   - Windows:
-     venv\Scripts\activate
-4. Instale as dependências:
-   pip install -r requirements.txt
+## 3. Ative o ambiente virtual:
+- Linux/Mac:
+```
+source venv/bin/activate
+```
+- Windows:
+```
+venv\Scripts\activate
+```
 
-5. Execute as migrações do banco:
-   python manage.py migrate
+## 4. Instale as dependências:
+```
+pip install -r requirements.txt
+```
 
-6. Crie um superusuário (para acessar o /admin):
-   python manage.py createsuperuser
+## 5. Execute as migrações do banco:
+```
+python manage.py migrate
+```
 
-7. Rode o servidor:
-   python manage.py runserver
+## 6. Rode o servidor:
+```
+python manage.py runserver
+```
 
-🔑 Funcionalidades
+## 7. Acesse no navegador:
+```
+http://127.0.0.1:8000/
+```
 
-Cadastro de usuários (/accounts/signup/)
+# 🔑 Acesso ao sistema
 
-Login (/accounts/login/)
+- Cadastro de novo usuário: /accounts/signup/
+- Login: /accounts/login/
+- Logout: feito via botão Sair no menu superior
 
-Logout (/accounts/logout/)
+# 📌 Observações
 
-Página inicial simples com navegação
-
-App de produtos (estrutura criada)
-
-📝 Observações
-
-- O banco de dados (db.sqlite3) e a pasta __pycache__/ não são versionados (estão no .gitignore).
-- O projeto já vem com páginas HTML básicas para login, logout e cadastro.
-- CSS básico incluído em static/css/style.css.
-
-👩‍💻 Autor
-Desenvolvido por Bells Bonzanini ✨
-
-
-
+- O arquivo db.sqlite3 foi removido do versionamento.
+- Arquivos estáticos (CSS/imagens) podem ser expandidos para melhorar o layout.
+- O sistema está pronto para testes funcionais, mas pode ser estendido com novas funcionalidades.
